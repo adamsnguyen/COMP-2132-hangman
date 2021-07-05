@@ -1,0 +1,147 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Kirang+Haerang&family=Permanent+Marker&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap')
+$font-stack: Fredericka the Great
+$primary-color: #7c7b89
+
+
+@mixin borderTheme 
+    border-radius: 25px
+
+body
+    font: 150% $font-stack
+    color: black
+    background-color: #f4d75e
+    min-width: 50vh
+
+input
+    &[type="text"]
+        height: 200%
+        width: 20%
+        font-size: 200%
+        text-align: center
+        font: 200% Permanent Marker
+
+header
+    display: flex
+    flex-direction: row
+    justify-content: space-evenly
+    align-items: center
+    vertical-align: middle
+
+button
+	transition: transform .2s
+	cursor:pointer
+	background-color: teal
+	color: white
+	padding: 15px 32px
+	text-align: center
+	text-decoration: none
+	font-size: 16px
+	margin: 4px 2px
+	cursor: pointer
+	flex: 0 0 200px
+	border: 2px solid black
+	border-radius: 25px
+	max-height: 70px
+	&:hover 
+		transform: scale(1.02)
+		border: 2px solid black   
+
+h1
+    text-align: center
+    font-size: 60px
+    line-height: 20px
+    white-space: nowrap
+    flex-basis: 8
+
+
+.container
+    flex: display
+    flex-direction: column
+    min-height: 50vh
+    border-radius: 25px
+    justify-content: center
+    align-content: center
+    margin: 2px
+    padding: 2px
+    background-color: #f1e4de
+
+.flex-container
+    display: flex
+    flex-direction: row
+    padding: 2px
+    min-height: 20vh
+    margin: 2px
+
+    div
+        @include borderTheme
+        flex: 1 0 auto
+        margin: 5px
+        padding: 10px
+        min-height: 20vh
+        max-width: 33%
+
+#item1
+    background-color: #e9723d
+    flex: 1 0 auto
+    display: flex
+    flex-direction: column
+    align-items: center
+
+
+    img
+        display: block
+        margin-left: auto
+        margin-right: auto
+        opacity: 0
+
+#item2
+    flex: 1 0 auto
+    background-color: #0b7fab
+    align-items: center
+    vertical-align: middle
+    display: flex
+    flex-direction: column
+    text-align: center
+
+#item3
+    flex: 1 0 auto
+    background-color: #e9723d
+    align-items: center
+    vertical-align: middle
+    text-align: center
+    word-wrap: break-word
+
+#letters
+    align-items: center
+    vertical-align: middle
+
+    div
+        background-color: lightgrey
+        text-align: center
+        vertical-align: middle
+        font: 50px Permanent Marker
+        line-height: 120px
+
+#letter-bank
+    font: 250% Permanent Marker
+    letter-spacing: 20px
+    word-wrap: break-word
+
+#error
+    font: 100% Permanent Marker
+    color: red
+
+footer
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    height: 100px
+    align-items: center
+
+#running-homer
+    position: absolute
+    right: 0px
+
+

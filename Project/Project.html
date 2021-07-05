@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles/styles.css">
+    <title class="asgnNum">This will be replaced</title>
+</head>
+
+<body>
+    <header>
+        <h1>HOMER HANGMAN</h1>
+        <button id="play-button">Play New Game</button>
+    </header>
+
+    <div class="container">
+
+        <img src="images/homer-running.gif" alt="running homer" id="running-homer">
+
+        <div class="flex-container" id="letters">
+
+            <div id="letter-0">
+                P
+            </div>
+            <div id="letter-1">
+                R
+            </div>
+            <div id="letter-2">
+                E
+            </div>
+            <div id="letter-3">
+                S
+            </div>
+            <div id="letter-4">
+                S
+            </div>
+            <div id="letter-5">
+                P
+            </div>
+            <div id="letter-6">
+                L
+            </div>
+            <div id="letter-7">
+                A
+            </div>
+            <div id="letter-8">
+                Y
+            </div>
+            <div id="letter-9">
+                !
+            </div>
+
+        </div>
+
+        <div class="flex-container">
+
+            <div id="item1">
+                <img src="images/homer1.png" alt="Homer" id="homer1">
+                <img src="images/homer2.png" alt="Homer" id="homer2">
+                <img src="images/homer3.png" alt="Homer" id="homer3">
+                <img src="images/homer4.png" alt="Homer" id="homer4">
+                <img src="images/homer5.png" alt="Homer" id="homer5">
+                <img src="images/homer6.png" alt="Homer" id="homer6">
+            </div>
+
+            <div id="item2">
+
+                <h2>Guess a Letter</h2>
+
+                <input type="text" id="letter-guess" maxlength="1" pattern="[A-Za-z]">
+                <p id="error"></p>
+                <button id="submit-button">Submit</button>
+
+                <br>Guess all letters to the secret word to win
+                <br>(Press the Play button to start a game)<br><br>
+
+            </div>
+
+            <div id="item3">
+
+                <h2>Letter Bank:</h2>
+                <p id="letter-bank"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>COMP 2132</p>
+        <p class="asgnNum"></p>
+        <p>Completed by: Adam Nguyen</p>
+    </footer>
+
+</body>
+
+<script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+    </script>
+<script src="scripts/comp2132-assignment.js"></script>
+
+</html>
